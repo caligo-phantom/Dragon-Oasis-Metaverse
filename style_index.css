@@ -1,0 +1,42 @@
+body::before {
+    display: block;
+    content: '';
+    height: 1.125rem;
+}
+
+.navbar{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    display: inline-block;
+}
+
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s forwards;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 14% }
+}
+
+@media (max-width: 992px){
+    .typed-out{
+        font-size: 1.5rem;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 28% }
+    }
+
+    .image{
+        width: 24rem;
+    }
+}

@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 1.125rem;
+}
+
+.accordion-body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+}

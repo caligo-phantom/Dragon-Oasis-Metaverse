@@ -1,0 +1,52 @@
+body::before {
+    display: block;
+    content: '';
+    height: 1.125rem;
+}
+
+.navbar{
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 1.125rem;
+}
+
+.typed-out{
+    white-space: nowrap;
+    animation: typing 1s forwards;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    width: 0;
+    padding-bottom: 1.125rem;
+    margin-left: 5rem;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+}
+
+.img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+  
+.img:hover {
+    box-shadow: 0 0 2px 1px #ffc107;
+}
+
+@media (max-width: 992px){
+    .typed-out{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .avatars{
+        width: 20rem;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+}

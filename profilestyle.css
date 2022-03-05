@@ -1,0 +1,66 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 1.125rem;
+}
+
+.navbar{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 83vh;
+}
+
+input { text-align: center; color: black; border-radius: 12px; border-width: 1px;}
+
+span {padding: 2px;}
+
+.signupbtn:hover {
+    opacity: 100%;
+}
+
+.signinbtn:hover {
+    opacity: 100%;
+}
+
+input:focus {
+    border-width: 1px;
+    border-radius: 12px;
+}
+
+.form{
+    display: grid;
+    margin: 10px;
+}
+
+input[type="date"]{
+    color: rgba(0, 0, 0, 0.555);
+    padding-left: 31px;
+}
+
+.social{
+    padding-inline: 5px;
+    opacity: 50%;
+}
+
+.social:hover{
+    opacity: 100%;
+}
+
+.arrow{
+    opacity: 50%;
+}
+
+.arrow:hover{
+    opacity: 100%;
+}
