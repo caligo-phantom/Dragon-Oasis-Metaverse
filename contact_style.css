@@ -1,0 +1,13 @@
+body::before {
+    display: block;
+    content: '';
+    height: 1.125rem;
+}
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar{
+    font-family: 'Roboto Mono', monospace;
+}
