@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="signin.js" defer></script>
     <title>Sign In</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
                 <a href="blog.html" class="nav-link">Blog</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Market</a>
+                <a href="market.html" class="nav-link">Market</a>
               </li>
             </ul>
           </div>
@@ -58,11 +59,11 @@
         <span class = "grid">
         <span class = "flex-box">
             <img src="assets/profile-pic.svg" width="180px" alt="logo" class="img" style="padding: 10px; margin: 10px;">
-            <span><input type = "email" placeholder = "email@address.com" /></span>
+            <span><input id="email" onkeyup="success()" type = "email" placeholder = "email@address.com" /></span>
             <br>
-            <span><input type = "password" placeholder = "•••••••"/></span>
+            <span><input id="password" onkeyup="success()" type = "password" placeholder = "•••••••"/></span>
             <br>
-            <button type="submit" class="btn btn-outline-warning" formaction="avatarselect.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;">Sign In</button>
+            <button type="submit" id="signin" class="btn btn-outline-warning" formaction="avatarselect.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;" disabled>Sign In</button>
             <span>Don't have an account?<button type="submit" class="btn btn-outline-warning" formaction="signup.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;">Sign Up</button></span>
         </span>
         </span>

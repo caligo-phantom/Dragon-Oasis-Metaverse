@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="signup.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
                 <a href="blog.html" class="nav-link">Blog</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Market</a>
+                <a href="market.html" class="nav-link">Market</a>
               </li>
             </ul>
           </div>
@@ -59,15 +60,15 @@
             <img src="assets/profile-pic.svg" width="180px" alt="logo" class="img" style="padding: 10px; margin: 10px;">
             <span><input type = "text" placeholder = "John Doe" /></span>
             <br>
-            <span><input type = "email" placeholder = "email@address.com" /></span>
+            <span><input id="email" type = "email" onkeyup="success()" placeholder = "email@address.com" /></span>
             <br>
-            <span><input type = "tel" placeholder = "01234 56789" pattern="[0-9]{5} [0-9]{5}"/></span>
+            <span><input id="tel" type = "tel" onkeyup="success()" placeholder = "0123456789" pattern="[0-9]{10}"/></span>
             <br>
-            <span><input type = "password" placeholder = "•••••••"/></span>
+            <span><input id="password" type = "password" onkeyup="success()" placeholder = "•••••••"/></span>
             <br>
-            <span><input type = "password" placeholder = "•••••••"/></span>
+            <span><input id="password2" type = "password" onkeyup="success()" placeholder = "•••••••"/></span>
             <br>
-            <button type="submit" class="btn btn-outline-warning" formaction="avatarselect.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;">Sign Up</button>
+            <button id="signup" type="submit" class="btn btn-outline-warning" formaction="avatarselect.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;" disabled>Sign Up</button>
             <span>Already have an account?<button type="submit" class="btn btn-outline-warning" formaction="signin.html" style="padding-inline: 10px; border-radius: 30px; padding-top: 0px; padding-bottom: 2px; margin: 10px;">Sign In</button></span>
         </span>
     </form>
